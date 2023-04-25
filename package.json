@@ -1,4 +1,13 @@
 {
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/capo33/City-Bike-Dev-Academy.git",
+  "author": "mohamed <s2000588@edu.bc.fi>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.ts"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
@@ -9,6 +18,7 @@
     "typescript": "^5.0.4"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0"
