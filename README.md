@@ -34,4 +34,4 @@ MIT
   [markdown-it]: <https://github.com/markdown-it/markdown-it>
   [node.js]: <http://nodejs.org>
   [express]: <http://expressjs.com>
-  [Typescrip]: <https://www.typescriptlang.org/>
+  [Typescript]: <https://www.typescriptlang.org/>
