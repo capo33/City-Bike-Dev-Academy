@@ -26,7 +26,7 @@ yarn start
 ## Tech
 - [node.js] 
 - [Express] 
-- [Typescrip]
+- [Typescript]
 
 ## License
 MIT
