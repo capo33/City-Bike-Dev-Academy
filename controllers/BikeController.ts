@@ -7,7 +7,9 @@ import BikeModel from "../models/Bike";
 //@access   Public
 const getBikes: RequestHandler = async (req, res, next) => {
   try {
-    const bikes = await BikeModel.find({}).limit(100);
+    // fetch all bikes from database and remove the white space
+    const bikes = await BikeModel.find({}).limit(15).lean();
+
     res.status(200).json(bikes);
   } catch (error) {
     if (error instanceof Error) {
@@ -45,7 +47,7 @@ const getBikesBySearch: RequestHandler = async (req, res, next) => {
   try {
     const DepartureStationName = new RegExp(searchQuery, "i");
     const bike = await BikeModel.find({ DepartureStationName });
-    
+
     res.status(200).json(bike);
   } catch (error) {
     if (error instanceof Error) {
@@ -56,7 +58,6 @@ const getBikesBySearch: RequestHandler = async (req, res, next) => {
     }
   }
 };
-
 
 //@desc     Create a bike
 //@route    POST /api/bikes
@@ -160,7 +161,7 @@ const getBikesWithPaginationAndSorting: RequestHandler = async (
   next
 ) => {
   const { page } = req.query as { page: string };
-  const LIMIT = 3;
+  const LIMIT = 10;
   const startIndex = parseInt(page) * LIMIT; // get the starting index of every page
 
   try {
