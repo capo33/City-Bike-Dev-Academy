@@ -16,7 +16,14 @@ yarn
 
 3- Create .env file
 
-4- Upload CSV file to your database
+4- Add your own data in .env file
+
+```bash
+PORT= your PORT
+MONGODB_URI = your MONGODB URI
+```
+
+5- Upload CSV file to your database
 
 ## Usage
 
