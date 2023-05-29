@@ -28,13 +28,16 @@ MONGODB_URI = your MONGODB URI ex: mongodb://localhost:27017/city-bike
 - <https://dev.hsl.fi/citybikes/od-trips-2021/2021-05.csv>
 
 6- Create database
+
 ![alt text](./create_db.jpg)
 
 6- Upload CSV file to your database
+
 ![alt text](./import_data.jpg)
 ![alt text](./import_data2.jpg)
 
 6- Now you should have the data like so
+
 ![alt text](./db.jpg)
 
 ## Usage
@@ -52,6 +55,8 @@ yarn start
 ```bash
 https://github.com/capo33/City-Bike-Dev-Academy-frontend
 ```
+
+![alt text](./city-bike.png)
 
 ## Tech
 
