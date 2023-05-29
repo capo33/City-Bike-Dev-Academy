@@ -9,6 +9,7 @@ const getBikes: RequestHandler = async (req, res, next) => {
   try {
     // fetch all bikes from database and remove the white space
     const bikes = await BikeModel.find({}).limit(15).lean();
+console.log(bikes);
 
     res.status(200).json(bikes);
   } catch (error) {
