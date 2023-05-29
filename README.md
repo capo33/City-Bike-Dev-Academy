@@ -19,15 +19,23 @@ yarn
 4- Add your own data in .env file
 
 ```bash
-PORT= your PORT
-MONGODB_URI = your MONGODB URI
+PORT= your PORT ex: 5000
+MONGODB_URI = your MONGODB URI ex: mongodb://localhost:27017/city-bike
 ```
 
 5- Download CSV file
 
 - <https://dev.hsl.fi/citybikes/od-trips-2021/2021-05.csv>
 
+6- Create database
+![alt text](./create_db.jpg)
+
 6- Upload CSV file to your database
+![alt text](./import_data.jpg)
+![alt text](./import_data2.jpg)
+
+6- Now you should have the data like so
+![alt text](./db.jpg)
 
 ## Usage
 
@@ -35,6 +43,14 @@ MONGODB_URI = your MONGODB URI
 
 ```
 yarn start
+```
+
+## Frontend
+
+1- Have a look to the frontend repo
+
+```bash
+https://github.com/capo33/City-Bike-Dev-Academy-frontend
 ```
 
 ## Tech
